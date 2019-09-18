@@ -129,6 +129,8 @@ header {
   justify-content: space-between;
   align-items: baseline;
   margin-top: 3rem;
+
+  padding: 0 2rem;
 }
 
 header ul {
@@ -165,6 +167,13 @@ main {
   justify-content: space-between;
 }
 
+
+@media (max-width: 992px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+
 .project {
   width: 30%;
   background: #fff;
@@ -175,6 +184,13 @@ main {
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px) {
+  .project {
+    width: 100%;
+  }
 }
 
 .project a {
@@ -221,6 +237,13 @@ main {
   display: flex;
 }
 
+
+@media (max-width: 992px) {
+  .platform-container {
+    flex-direction: column;
+  }
+}
+
 .platform {
   border: solid 2px #ccc;
   padding: 2rem;
@@ -229,8 +252,16 @@ main {
   margin-right: 2rem;
 }
 
+@media (max-width: 992px) {
+  .platform {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .platform:last-of-type {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .platform h3 {
@@ -283,12 +314,19 @@ main {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  padding: 0 2rem;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .description {
-  max-width: 70%;
+  max-width: calc(100% - 300px - 2rem);
+}
+
+@media (max-width: 992px) {
+  .description {
+    max-width: calc(100% - 300px);
+  }
 }
 
 .illustration {
@@ -315,7 +353,9 @@ footer .content-container {
   position: relative;
   box-sizing: border-box;
   margin: 3rem auto 0 auto;
-  padding: 3rem 0;
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem 2rem;
 }
 
 footer h2 {
