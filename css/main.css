@@ -36,6 +36,12 @@ h1 {
   margin: 0;
 }
 
+@media (max-width: 992px) {
+  h1 {
+    margin: 0 auto;
+  }
+}
+
 h1 a.logo {
   width: 13rem;
   height: 4.5rem;
@@ -48,12 +54,24 @@ h1 a.logo {
   background-image:url(../img/ucfopen-logo.svg);
 }
 
+@media (max-width: 992px) {
+    h1 a.logo {
+      margin-right: 0;
+    }
+}
+
 main h2 {
   margin-bottom: 3rem;
 }
 
 #about_our_initiative {
   margin-top: 5rem;
+}
+
+@media (max-width: 992px) {
+  #about_our_initiative {
+    margin-top: 1rem;
+  }
 }
 
 #our_platforms_and_technologies {
@@ -129,14 +147,30 @@ header {
   justify-content: space-between;
   align-items: baseline;
   margin-top: 3rem;
-
   padding: 0 2rem;
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
 }
 
 header ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+nav {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 nav li {
@@ -158,6 +192,12 @@ main {
   margin: 0 auto;
   border-radius: 10px;
   margin-top: 3rem;
+}
+
+@media (max-width: 992px) {
+  main {
+    padding: 2rem;
+  }
 }
 
 .projects {
@@ -281,6 +321,13 @@ main {
   padding: 1rem 0.5rem 0 0.5rem;
 }
 
+@media (max-width: 992px) {
+  .platform .img-container {
+    height: 4rem;
+    width: 6rem;
+  }
+}
+
 .platform .img-container img {
   width: 100%;
   position: relative;
@@ -310,6 +357,12 @@ main {
   height: calc(100% + 1rem);
 }
 
+@media (max-width: 992px) {
+  .platform .img-container:before {
+    display: none;
+  }
+}
+
 .top {
   position: relative;
   width: 100%;
@@ -325,7 +378,7 @@ main {
 
 @media (max-width: 992px) {
   .description {
-    max-width: calc(100% - 300px);
+    max-width: 100%;
   }
 }
 
@@ -339,6 +392,16 @@ main {
   height: 275px;
   top: -30px;
   right: 30px;
+}
+
+@media (max-width: 992px) {
+  .illustration {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 2rem auto 0 auto;
+    display: block;
+  }
 }
 
 footer {
