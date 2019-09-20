@@ -78,6 +78,12 @@ main h2 {
   margin-top: 4rem;
 }
 
+@media (max-width: 992px) {
+  #our_platforms_and_technologies {
+    margin-top: 1rem;
+  }
+}
+
 a:link,
 a:visited,
 a:active,
@@ -225,6 +231,7 @@ main {
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 
@@ -254,6 +261,12 @@ main {
 .project.project-udoit img {
   height: 4rem;
   padding: 1rem;
+}
+
+.project.project-obojobo img {
+  padding: 1rem 0 1rem 0;
+  width: auto;
+  height: 4rem;
 }
 
 .project.project-materia img {
