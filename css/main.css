@@ -131,14 +131,14 @@ header nav a:hover:after {
 }
 
 .tag.tag-php {
-	background-color: #8892bf;
+	background-color: #45538a;
 }
 .tag.tag-js {
-	background-color: #eed646;
+	background-color: #efdb50;
 	color: rgb(53, 53, 53);
 }
 .tag.tag-python {
-	background-color: #759b37;
+	background-color: #2e679b;
 }
 
 header {
