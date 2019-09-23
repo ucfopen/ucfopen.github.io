@@ -258,6 +258,11 @@ main {
 	padding: 1rem;
 }
 
+.project.project-obojobo img {
+	height: 3.3rem;
+	padding: 1.3rem 0;
+}
+
 .project.project-materia img {
 	height: 4.5rem;
 	padding: 0.5rem 0 1rem 0;
